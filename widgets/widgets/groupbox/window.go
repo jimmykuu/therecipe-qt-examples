@@ -14,10 +14,10 @@ func NewWindow(parent widgets.QWidget_ITF) *Window {
 	window.QWidget = widgets.NewQWidget(parent, 0)
 
 	var grid = widgets.NewQGridLayout(window)
-	grid.AddWidget(window.createFirstExclusiveGroup(), 0, 0, core.Qt__AlignLeft)
-	grid.AddWidget(window.createSecondExclusiveGroup(), 1, 0, core.Qt__AlignLeft)
-	grid.AddWidget(window.createNonExclusiveGroup(), 0, 1, core.Qt__AlignLeft)
-	grid.AddWidget(window.createPushButtonGroup(), 1, 1, core.Qt__AlignLeft)
+	grid.AddWidget2(window.createFirstExclusiveGroup(), 0, 0, core.Qt__AlignLeft)
+	grid.AddWidget2(window.createSecondExclusiveGroup(), 1, 0, core.Qt__AlignLeft)
+	grid.AddWidget2(window.createNonExclusiveGroup(), 0, 1, core.Qt__AlignLeft)
+	grid.AddWidget2(window.createPushButtonGroup(), 1, 1, core.Qt__AlignLeft)
 	window.SetLayout(grid)
 
 	window.SetWindowTitle("Group Boxes")

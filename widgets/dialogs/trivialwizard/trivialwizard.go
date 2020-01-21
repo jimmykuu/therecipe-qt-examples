@@ -33,10 +33,10 @@ func createRegistrationPage() *widgets.QWizardPage {
 	var emailLineEdit = widgets.NewQLineEdit(page)
 
 	var layout = widgets.NewQGridLayout(page)
-	layout.AddWidget(nameLabel, 0, 0, 0)
-	layout.AddWidget(nameLineEdit, 0, 1, 0)
-	layout.AddWidget(emailLabel, 1, 0, 0)
-	layout.AddWidget(emailLineEdit, 1, 1, 0)
+	layout.AddWidget2(nameLabel, 0, 0, 0)
+	layout.AddWidget2(nameLineEdit, 0, 1, 0)
+	layout.AddWidget2(emailLabel, 1, 0, 0)
+	layout.AddWidget2(emailLineEdit, 1, 1, 0)
 	page.SetLayout(layout)
 
 	return page
